@@ -1,0 +1,31 @@
+body {
+    background-color: grey;
+}
+fieldset > legend {
+    font-weight: bold;
+    padding: 2px 5px;
+}
+
+li {
+    color: whitesmoke;
+}
+
+li:hover {
+    background: black;
+}
+
+.bkg-red-t:hover {
+    background: #ff00003f;
+}
+
+.bkg-blue-t:hover {
+    background: #0000ff3f;
+}
+
+.bkg-yellow-t:hover {
+    background: #ffff003f;
+}
+
+.f-black {
+    color: black;
+}
