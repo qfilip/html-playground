@@ -14,6 +14,19 @@ li:hover {
     background: black;
 }
 
+button {
+    border: 2px solid orangered;
+    background: transparent;
+    color: orangered;
+}
+
+
+button:hover {
+    border: 2px solid grey;
+    background: orangered;
+    color: grey;
+}
+
 .bkg-red-t:hover {
     background: #ff00003f;
 }
@@ -28,4 +41,20 @@ li:hover {
 
 .f-black {
     color: black;
+}
+
+.modal {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.842);
+}
+
+.modal-content {
+    top: 250px;
+    background: white;
+    width: 90%;
+    margin: auto;
 }

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/w3-css/4.1.0/w3.min.css">
     <link rel="stylesheet" href="src/global.css">
+    <link rel="stylesheet" href="src/modal.css">
     <title>Web Playground</title>
 </head>
 <body>
@@ -14,34 +15,61 @@
         <div class="w3-quarter">
             <fieldset class="bkg-red-t">
                 <legend class="w3-red">HTML</legend>
+                <ul id="html-links"></ul>
             </fieldset>
         </div>
 
         <div class="w3-quarter">
             <fieldset class="bkg-blue-t">
                 <legend class="w3-blue">CSS</legend>
+                <ul id="css-links"></ul>
             </fieldset>
         </div>
 
         <div class="w3-quarter">
             <fieldset class="bkg-yellow-t">
                 <legend class="w3-yellow f-black">JS</legend>
+                <ul id="js-links"></ul>
             </fieldset>
         </div>
 
         <div class="w3-quarter">
             <fieldset>
                 <legend class="w3-grey">Other</legend>
-                <ul>
-                    <li>
-                        <a href="subpages/other/fontAwsTricks.html">Font Awesome Tricks</a>
-                    </li>
-                    <li>
-                        <a href="subpages/other/fontAwsAlt.html">Font Awesome Alternatives</a>
-                    </li>
-                </ul>
+                <ul id="other-links"></ul>
             </fieldset>
         </div>
-    </div>    
+    </div>
+
+
+    <!-- <div class="w3-center">
+        <div class="iframe-container">
+            <iframe id="page-display" class="responsive-iframe" src="" frameborder="0"></iframe>
+        </div>
+    </div> -->
+
+    <div id="modal" class="confirm-modal">
+        <div class="dialog-container flex-centered">
+            <div>
+                <iframe id="page-display" width="600" height="500" src="" frameborder="0"></iframe>
+                <br/>
+                <div class="d-flex flex-centered">
+                    <button onclick="showModal(false)">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="src/index.js"></script>
+    <script>
+        (() => {
+            generateLinks();
+        })();
+
+        function load() {
+            let t = document.getElementById('page-display');
+            console.log(t.innerHTML);
+        }
+    </script>
 </body>
 </html>
