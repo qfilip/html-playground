@@ -1,10 +1,10 @@
 var htmlLinks = [
     { text: 'Insert and Delete Tags', path: 'subpages/html/insAnddel.html' },
-    { text: '', path: '' },
+    { text: 'Basic autocomplete', path: 'subpages/html/autocomplete.html' },
 ];
 
 var cssLinks = [
-
+    { text: 'Details tag style', path: 'subpages/css/detailsStyle.html' },
 ];
 
 var jsLinks = [

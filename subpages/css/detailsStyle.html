@@ -1,0 +1,49 @@
+<style>
+    @keyframes open-anim {
+        0% {opacity: 0; margin-left: -20px}
+        100% {opacity: 1; margin-left: 0px}
+    }
+
+    .details-1[open] summary ~ * {
+      animation: open-anim .5s ease-in-out;
+    }
+    .summary-1 { outline:none; cursor: pointer; }
+
+    .details-2 {
+        color: wheat;
+        cursor: pointer;
+        font-weight: 300;
+        margin-bottom: 1vh;
+        width: 33vw;
+        background-color: 333333;
+    }
+
+    .summary-2 {
+        background: linear-gradient(#333333, #1a1a1a);
+        border-top-right-radius: 3px;
+        border-top-left-radius: 3px;
+        padding: 2.5vh;
+        font-size: 2.8vh;
+    }
+
+    .summary-2:focus {
+        outline: none;
+    }
+</style>
+    
+<h3>Style detail tags</h3>
+<hr>
+
+<!-- sample 1 -->
+<details class="details-1">
+    <summary class="summary-1">Animated</summary>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum dolores porro sit quibusdam odio, voluptas cupiditate aut numquam perferendis reprehenderit odit rem inventore impedit, magnam dolor obcaecati totam at corrupti?</p>
+</details>
+
+<br>
+
+<!-- sample 2 -->
+<details class="details-2">
+    <summary class="summary-2">Styled</summary>
+    <p class="p-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum dolores porro sit quibusdam odio, voluptas cupiditate aut numquam perferendis reprehenderit odit rem inventore impedit, magnam dolor obcaecati totam at corrupti?</p>
+</details>

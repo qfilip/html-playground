@@ -10,9 +10,10 @@ li {
     color: whitesmoke;
 }
 
-li:hover {
-    background: black;
-}
+#html-links > li:hover { background: red; }
+#css-links > li:hover { background: blue; }
+#js-links > li:hover { background: yellow; }
+#other-links > li:hover { background: black; }
 
 button {
     border: 2px solid orangered;
