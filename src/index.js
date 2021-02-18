@@ -8,7 +8,7 @@ var cssLinks = [
 ];
 
 var jsLinks = [
-
+    { text: 'Cryptography 101', path: 'subpages/js/cryptography.html' },
 ];
 
 var otherLinks = [
@@ -44,6 +44,7 @@ function makeListItemWithLink(link) {
 }
 
 function loadToFrame(path) {
+    debugger
     let iframe = document.getElementById('page-display');
     iframe.src = path;
     showModal(true);
